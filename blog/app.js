@@ -44,6 +44,10 @@ app.get("/blogs", (req, res) => {
     })
 });
 
+app.get("/blogs/new", (req,res)=> {
+    res.render("new")
+});
+
 app.listen(3000, function() {
     console.log("Server is listening on port 3000");
 });
